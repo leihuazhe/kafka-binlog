@@ -1,0 +1,6 @@
+.idea/
+docker/
+kafka-binlog-pom.iml
+logs/
+target/
+.D*
