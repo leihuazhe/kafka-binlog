@@ -35,8 +35,8 @@ public class BinlogKafkaProducer implements CanalBinaryListener {
     }
 
     public void init() {
-        logger.info(new StringBuffer("[KafkaStringProducer] [init] ")
-                .append(") broker-list(").append(host).append(" )").toString());
+        logger.info("[KafkaStringProducer] [init] " +
+                ") broker-list(" + host + " )");
 
         Properties properties = KafkaConfigBuilder.defaultProducer().bootstrapServers(host)
                 .withKeySerializer(IntegerSerializer.class)
