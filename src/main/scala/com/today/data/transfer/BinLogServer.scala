@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory
   * 描述: binlogService server 启动端
   *
   * @author hz.lei
-  * @date 2018年03月07日 上午1:08
+  * @since 2018年03月07日 上午1:08
   */
 object BinLogServer {
   val logger = LoggerFactory.getLogger(getClass)

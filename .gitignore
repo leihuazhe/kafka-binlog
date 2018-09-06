@@ -1,6 +1,7 @@
 .idea/
-docker/
+docker/apps
 kafka-binlog-pom.iml
 logs/
 target/
-.D*
+.DS_Store
+**/.DS_Store
