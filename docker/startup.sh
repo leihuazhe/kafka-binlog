@@ -1,4 +1,5 @@
 #!/bin/sh
+# chmod 744
 echo "===== begin to startup binlog server ===="
 export JVM_HOME='opt/oracle-server-jre'
 export PATH=$JVM_HOME/bin:$PATH
