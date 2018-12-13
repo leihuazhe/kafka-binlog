@@ -4,6 +4,4 @@ kafka-binlog-pom.iml
 logs/
 target/
 .DS_Store
-**/.DS_Store
-
-kafka-binlog.iml
+*.iml

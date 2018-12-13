@@ -3,7 +3,7 @@ MAINTAINER maple leihuazhe@gmail.com
 
 RUN mkdir -p  /opt/binlog
 
-COPY  ./apps/kafka-binlog-1.0-jar-with-dependencies.jar  /opt/binlog/
+COPY  ./apps/kafka-binlog-jar-with-dependencies.jar  /opt/binlog/
 COPY  ./startup.sh /opt/binlog/
 
 WORKDIR /opt/binlog

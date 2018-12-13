@@ -10,7 +10,7 @@ PRO_NAME=binlog-server
 NOW_DATE=`date +%Y%m%d%H%M%S`
 
 
-# get the current dir 
+# get the current dir
 PRO_DIR=`pwd`
 dirname $0|grep "^/" >/dev/null
 if [ $? -eq 0 ];then
@@ -26,7 +26,7 @@ else
 fi
 
 
-# logger dir 
+# logger dir
 LOG_DIR=$PRO_DIR/logs
 if [ ! -d "$LOG_DIR" ]; then
         mkdir "$LOG_DIR"
@@ -57,7 +57,7 @@ process_exit() {
 
 trap 'kill ${!};process_exit' SIGTERM
 
-nohup java -server $JVM_OPTS $SOA_BASE $DEBUG_OPTS $USER_OPTS  $E_JAVA_OPTS -jar $PRO_DIR/kafka-binlog-1.0-jar-with-dependencies.jar >> $LOG_DIR/console.log 2>&1 &
+nohup java -server $JVM_OPTS $SOA_BASE $DEBUG_OPTS $USER_OPTS  $E_JAVA_OPTS -jar $PRO_DIR/kafka-binlog-jar-with-dependencies.jar >> $LOG_DIR/console.log 2>&1 &
 pid="$!"
 echo "start pid: $pid" > $LOG_DIR/pid.txt
 

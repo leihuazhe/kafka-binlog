@@ -82,6 +82,7 @@
 
 
     <build>
+        <finalName>kafka-binlog</finalName>
         <plugins>
             <plugin>
                 <groupId>net.alchim31.maven</groupId>
@@ -131,9 +132,6 @@
             </plugin>
 
 
-
-
-
             <!--命令 mvn package assembly:single  -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -172,7 +170,7 @@
                         <configuration>
                             <!-- copy child's output files into target/docker -->
                             <tasks>
-                                <copy file="${project.build.directory}/kafka-binlog-1.0-jar-with-dependencies.jar"
+                                <copy file="${project.build.directory}/kafka-binlog-jar-with-dependencies.jar"
                                       todir="${basedir}/docker/apps"/>
                             </tasks>
                         </configuration>
